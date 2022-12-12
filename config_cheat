@@ -1,0 +1,32 @@
+# Cheat sheet for config (git) processes:
+---------------------------------------------------------------------------
+https://github.com/yoda-bjw/dotfiles.git
+	Username: yoda-bjw
+	Password: (web browser only): <secret>
+	yodatoken: (CLI) <secret>
+---------------------------------------------------------------------------
+Create a new repository on the command line (assumes using a bare git repository, alias=config).
+
+	$ echo "# dotfiles" >> README.md
+	$ config init
+	$ config add README.md
+	$ config commit -m "first commit"
+	$ config branch -M master
+	$ config remote add origin https://github.com/yoda-bjw/dotfiles.git
+	$ config push -u origin master
+---------------------------------------------------------------------------
+Push an existing repository from the command line (assumes using a bare git repository, alias=config).
+
+	$ config remote add origin https://github.com/yoda-bjw/dotfiles.git
+	$ config branch -M master
+	$ config push -u origin master
+		Username: yoda-bjw
+		Password: <secret>
+---------------------------------------------------------------------------
+Everyday repository-management:
+
+	$ config status # display status of tracked files.
+	$ config add <filename>	# Adds file to local repository
+	$ config commit -m "Commit comment" # commits added but not yet commited files to local repository.
+	$ config push https://github.com/yoda-bjw/dotfiles.git
+		# Must supply github (remote repository) Username and Token	
