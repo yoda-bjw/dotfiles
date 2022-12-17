@@ -29,4 +29,18 @@ Everyday repository-management:
 	$ config add <filename>	# Adds file to local repository
 	$ config commit -m "Commit comment" # commits added but not yet commited files to local repository.
 	$ config push https://github.com/yoda-bjw/dotfiles.git
-		# Must supply github (remote repository) Username and Token	
+		# Must supply github (remote repository) Username and Token
+---------------------------------------------------------------------------
+Config (git) aliases in .bash_aliases:
+	addup='config add -u'
+        addall='config add .'
+        branch='config branch'
+        checkout='config checkout'
+        clone='config clone'
+        commit='config commit -m'
+        fetch='config fetch'
+        pull='config pull origin'
+        push='config push origin'
+        stat='config status'  # 'status' is protected name so using 'stat' instead
+        tag='config tag'
+        newtag='config tag -a'	
