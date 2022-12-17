@@ -43,4 +43,23 @@ Config (git) aliases in .bash_aliases:
         push='config push origin'
         stat='config status'  # 'status' is protected name so using 'stat' instead
         tag='config tag'
-        newtag='config tag -a'	
+        newtag='config tag -a'
+--------------------------------------------------------------------------
+Create a bare repository on a new machine <https://www.atlassian.com/git/tutorials/dotfiles>: 
+	First, add this alias to .bashrc:
+		alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+	Then:
+	$ echo ".cfg" >> .gitignore
+	$ git clone --bare <git-repo-url> $HOME/.cfg
+	$ config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+	$ config checkout
+	The step above might fail with a message like:
+	error: The following untracked working tree files would be overwritten by checkout:
+       .bashrc
+       .gitignore
+       Please move or remove them before you can switch branches.
+       Aborting
+       This is because your $HOME folder might already have some stock configuration files which would be overwritten by Git. The solution is simple: back up the files if you care about them, remove them if you don't care. Then, rerun $ config checkout
+       $ config config --local status.showUntrackedFiles no
+
+	
