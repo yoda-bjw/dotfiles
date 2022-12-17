@@ -32,12 +32,12 @@ Everyday repository-management:
 		# Must supply github (remote repository) Username and Token
 ---------------------------------------------------------------------------
 Config (git) aliases in .bash_aliases:
-	addup='config add -u'
+	addup='config add -u' <filename>
         addall='config add .'
         branch='config branch'
         checkout='config checkout'
         clone='config clone'
-        commit='config commit -m'
+        commit='config commit -m' <follow with "Comment">
         fetch='config fetch'
         pull='config pull origin'
         push='config push origin'
