@@ -55,11 +55,13 @@ ex ()
 }
 
 # More git aliases, using the bare master repository alias "config" for "git."
-        alias addup='config add -u'
-        alias addall='config add .'
+        alias addup='config add -u' # <filename1 filename2> <*.txt>
+        # alias addall='config add .' # Adds entire directory. Not for bare repo!!
         alias branch='config branch'
         alias checkout='config checkout'
         alias clone='config clone'
+        alias diff='config diff' # Shows unstaged changes.
+        alias diffs='config diff --staged' # Shows staged changes.
         alias commit='config commit -m'
         alias fetch='config fetch'
         alias pull='config pull origin'
