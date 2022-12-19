@@ -32,18 +32,20 @@ Everyday repository-management:
 		# Must supply github (remote repository) Username and Token
 ---------------------------------------------------------------------------
 Config (git) aliases in .bash_aliases:
-	addup='config add -u' <filename>
-        addall='config add .'
-        branch='config branch'
-        checkout='config checkout'
-        clone='config clone'
-        commit='config commit -m' <follow with "Comment">
-        fetch='config fetch'
-        pull='config pull origin'
-        push='config push origin'
-        stat='config status'  # 'status' is protected name so using 'stat' instead
-        tag='config tag'
-        newtag='config tag -a'
+		alias addup='config add -u' # <filename1 filename2> <*.txt>
+        # alias addall='config add .' # Adds entire directory. Not for bare repo!!
+        alias branch='config branch'
+        alias checkout='config checkout'
+        alias clone='config clone'
+        alias diff='config diff' # Shows unstaged changes.
+        alias diffs='config diff --staged' # Shows staged changes.
+        alias commit='config commit -m'
+        alias fetch='config fetch'
+        alias pull='config pull origin'
+        alias push='config push origin'
+        alias stat='config status'  # 'status' is protected name so using 'stat' instead
+        alias tag='config tag'
+        alias newtag='config tag -a'
 --------------------------------------------------------------------------
 Create a bare repository on a new machine <https://www.atlassian.com/git/tutorials/dotfiles>: 
 	First, add this alias to .bashrc:
