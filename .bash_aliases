@@ -54,7 +54,7 @@ ex ()
   fi
 }
 
-# config (git)
+# More git aliases, using the bare master repository alias "config" for "git."
         alias addup='config add -u'
         alias addall='config add .'
         alias branch='config branch'
