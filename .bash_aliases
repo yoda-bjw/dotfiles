@@ -27,6 +27,9 @@
 	alias ln='ln -i'
 	alias rm='rm -I --preserve-root'
 
+# Start Emacs Client from the terminal
+	alias emacs="emacsclient -c -a 'emacs'"
+
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
 ex ()
