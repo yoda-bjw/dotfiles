@@ -66,7 +66,7 @@ ex ()
         alias fetch='config fetch'
         alias pull='config pull origin'
         alias push='config push origin'
-        alias stat='config status'  # 'status' is protected name so using 'stat' instead
+        alias gitstat='config status'  # 'status' is protected name so using 'stat' instead
         alias tag='config tag'
         alias newtag='config tag -a'
         
