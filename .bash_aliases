@@ -20,7 +20,7 @@
 
 # Nala install/uninstall applications
 	alias shitcan='sudo nala purge'
-	alias nalin-'sudo nala install'
+	alias nalin='sudo nala install'
 
 # Prevent file manipulation blunders with interactive confirmations.
 	alias mv='mv -i'
