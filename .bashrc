@@ -77,9 +77,9 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='exa -la --color=always --group-directories-first'
+    alias ls='exa -lah --color=always --group-directories-first'
     alias lt='exa -aT --color=always --group-directories-first' # tree listing
-    alias l.='exa -a | egrep "^\."' # returns only dotfiles
+    alias l.='exa -la --color=always | egrep "^\."' # returns only dotfiles
 
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
