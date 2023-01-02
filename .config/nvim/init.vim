@@ -2,6 +2,7 @@
 
 " General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
+:set nocompatible		"Required for Vimwiki
 :set number
 ":set relativenumber
 :set autoindent
@@ -12,6 +13,9 @@
 :set mouse=a
 :set laststatus=2		"Always show statusline
 :set noshowmode			"Uncomment to prevent non-normal modes showing in and below powerline
+
+filetype plugin on		"For Vimwiki, see https://vimwiki.github.io
+syntax on				"For Vimwiki, see https://vimwiki.github.io
 
 " Plugins - Using Vim-Plug
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -26,6 +30,7 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons'		" Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal'			" Vim Terminal
 Plug 'https://github.com/preservim/tagbar'				" Tagbar for code navigation
+Plug 'vimwiki/vimwiki'									" Vimwiki
 
 call plug#end()
 
