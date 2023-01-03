@@ -125,4 +125,4 @@ eval "$(thefuck --alias)"
 
 # alias for standard git commands points to bare git repository in /home/yoda/.cfg/
 # for example: config status, config add .bashrc, config commit -m "Add bashrc", config push
-alias config='/usr/bin/git --git-dir=/home/yoda/.cfg/ --work-tree=/home/yoda'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
