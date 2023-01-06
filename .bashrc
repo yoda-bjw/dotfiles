@@ -3,6 +3,7 @@
 # for examples
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 # If not running interactively, don't do anything
 case $- in
