@@ -1,0 +1,12 @@
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> .bashrc
+source .bashrc
+echo "$HOME/.cfg" >> .gitignore
+git clone --bare https://github.com/yoda-bjw/dotfiles.git $HOME/.cfg
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+cp .bashrc .bashrc_old
+cp .gitignore .gitignore_old
+config checkout -f
+source .bashrc
+sudo apt install nala exa thefuck -y
+echo
+echo "NOW TYPE: config config --local status.showUntrackedFiles no"
