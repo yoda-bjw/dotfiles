@@ -1,7 +1,0 @@
-# NEOVIM post-installation procedure.
-
-# Open ~/.config/nvim/init.vim and use the :PlugInstall command to install the plugins.
-cd ~/.config/nvim
-nvim init.vim
-:PlugInstall
-:checkhealth
