@@ -19,7 +19,7 @@
 	alias updatey='sudo nala update && sudo nala upgrade -y'
 
 # Nala install/uninstall applications
-	alias shitcan='sudo nala purge'
+	alias shitcan='sudo nala purge && sudo nala autoremove'
 	alias nalin='sudo nala install'
 
 # Prevent file manipulation blunders with interactive confirmations.
