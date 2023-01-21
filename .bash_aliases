@@ -15,8 +15,8 @@
 	# alias ls='exa -la --color=always --group-directories-first'
 
 # Nala update and upgrade
-	alias update='sudo nala update && sudo nala upgrade'
-	alias updatey='sudo nala update && sudo nala upgrade -y'
+	alias update='sudo nala update && sudo nala upgrade && sudo flatpak update'
+	alias updatey='sudo nala update && sudo nala upgrade && sudo flatpak update -y'
 
 # Nala install/uninstall applications
 	alias shitcan='sudo nala purge && sudo nala autoremove'
