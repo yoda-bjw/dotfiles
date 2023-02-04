@@ -14,9 +14,12 @@
 # Uncomment if this line does not already exist in ~/.bashrc
 	# alias ls='exa -la --color=always --group-directories-first'
 
+# Directory navigation
+	alias cdh='cd ~'
+	
 # Nala update and upgrade
 	alias update='sudo nala update && sudo nala upgrade && sudo flatpak update'
-	alias updatey='sudo nala update && sudo nala upgrade && sudo flatpak update -y'
+	alias updatey='sudo nala update && sudo nala upgrade -y && sudo flatpak update'
 
 # Nala install/uninstall applications
 	alias shitcan='sudo nala purge && sudo nala autoremove'
