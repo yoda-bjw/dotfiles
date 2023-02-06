@@ -4,8 +4,8 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [user]
-	name = yoda
-	email = 119130080+yoda-bjw@users.noreply.github.com
+	name = Bruce Wilkinson
+	email = wilkinson.bj@gmail.com
 [init]
 	defaultBranch = master
 [credential "https://github.com"]
