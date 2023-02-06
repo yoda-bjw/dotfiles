@@ -18,8 +18,8 @@
 	alias cdh='cd ~'
 	
 # Nala update and upgrade
-	alias update='sudo nala update && sudo nala upgrade && sudo flatpak update'
-	alias updatey='sudo nala update && sudo nala upgrade -y && sudo flatpak update'
+	alias update='sudo nala update && sudo nala upgrade && sudo flatpak update && sudo snap refresh'
+	alias updatey='sudo nala update && sudo nala upgrade -y && sudo flatpak update && sudo snap refresh'
 
 # Nala install/uninstall applications
 	alias shitcan='sudo nala purge && sudo nala autoremove'
