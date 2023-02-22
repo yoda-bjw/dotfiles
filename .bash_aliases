@@ -78,3 +78,8 @@ ex ()
         alias newtag='config tag -a'
         
 # Got more? Add them below.
+
+# Call bash-insulter (/etc/bash.command-not-found)
+if [ -f /etc/bash.command-not-found ]; then
+	. /etc/bash.command-not-found
+fi
