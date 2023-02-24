@@ -2,8 +2,13 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# PATH additions (ref $ printenv to review PATH global variable
 export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH" # Put personal shell scripts or other executables here
+
+# Set vim keybindings for bash shell. Comment to unset and return to default emacs keys.
+set -o vi
 
 # If not running interactively, don't do anything
 case $- in
