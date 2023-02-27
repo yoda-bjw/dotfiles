@@ -8,7 +8,7 @@ export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH" # Put personal shell scripts or other executables here
 
 # Set vim keybindings for bash shell. Comment to unset and return to default emacs keys.
-set -o vi
+#set -o vi
 
 # If not running interactively, don't do anything
 case $- in
