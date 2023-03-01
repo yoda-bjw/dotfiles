@@ -12,18 +12,15 @@
 
 # Vertical ist of directories, files, and hidden files in color, directories first.
 # Uncomment if this line does not already exist in ~/.bashrc
-	# alias ls='exa -la --color=always --group-directories-first'
+#alias ls='exa -la --color=always --group-directories-first'
 
-# Directory navigation
-	alias cdh='cd ~'
-	
 # Nala update and upgrade
 	alias update='sudo nala update && sudo nala upgrade && sudo flatpak update && sudo snap refresh'
 	alias updatey='sudo nala update && sudo nala upgrade -y && sudo flatpak update && sudo snap refresh'
 
 # Nala install/uninstall applications
 	alias shitcan='sudo nala purge && sudo nala autoremove'
-	alias nalin='sudo nala install'
+	alias nalin='sudo nala update && sudo nala install'
 
 # Prevent file manipulation blunders with interactive confirmations.
 	alias mv='mv -i'
